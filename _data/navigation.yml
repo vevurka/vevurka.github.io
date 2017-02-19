@@ -1,0 +1,7 @@
+main:
+  - title: "Categories"
+    url: /categories
+  - title: "DSP2017"
+    url: /categories/dsp2017
+  - title: "About"
+    url: /about
