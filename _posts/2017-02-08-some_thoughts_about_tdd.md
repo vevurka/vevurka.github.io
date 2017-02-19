@@ -3,6 +3,7 @@ layout: single
 title:  Some thoughts about TDD
 date:   2017-02-08 12:20:01 +0100
 categories: quality
+excerpt: TDD or not TDD
 ---
 
 A few months ago one of my colleagues did an awesome training in TDD. I had heard about TDD before - mostly bad opinions, and I was quite sure that I know
