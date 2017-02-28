@@ -15,7 +15,7 @@
   }
 
   a {
-    color: inherit;
+    color: $dark-gray;
     text-decoration: none;
   }
 }
@@ -23,8 +23,8 @@
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: mix(#fff, $gray, 25%);
+  font-size: $type-size-4;
+  color: $darker-gray;
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
@@ -35,6 +35,7 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
+  font-size: $type-size-5;
 
   a + a {
     opacity: 0.5;

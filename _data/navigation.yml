@@ -1,9 +1,7 @@
 main:
-  - title: "Quality"
-    url: /categories/#quality
-  - title: "Interviews"
-    url: /categories/#interviews
-  - title: "DSP2017"
-    url: /categories/#dsp2017
+  - title: "Categories"
+    url: /categories
+  - title: "DSP17"
+    url: /categories/dsp17
   - title: "About"
     url: /about

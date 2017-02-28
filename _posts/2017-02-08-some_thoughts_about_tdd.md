@@ -2,7 +2,7 @@
 layout: single
 title:  Some thoughts about TDD
 date:   2017-02-08 12:20:01 +0100
-categories: quality
+categories: dsp17
 excerpt: TDD or not TDD
 ---
 

@@ -1,0 +1,20 @@
+---
+layout: archive
+author_profile: true
+permalink: /categories/dsp17
+category_name: dsp17
+title: DSP17
+---
+{% include group-by-array collection=site.posts field="categories" %}
+{% for category in group_names %}
+    {% if category == "dsp17" %}
+        {% assign posts = group_items[forloop.index0] %}
+        {% for post in posts %}
+            {% include archive-single.html %}
+        {% endfor %}
+
+{% capture feed_file %}/feed.{{ page.category_name }}.xml{%endcapture%}
+<p class="page__footer-copyright">subscribe <a href="{{ feed_file | relative_url }}">via RSS</a></p>
+
+    {% endif %}
+{% endfor %}
