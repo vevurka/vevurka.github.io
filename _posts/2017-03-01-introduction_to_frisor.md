@@ -8,8 +8,7 @@ excerpt: About my dsp17 project
 
 I decided to participate in [Get Noticed!](http://devstyle.pl/daj-sie-poznac/) competition (in polish "Daj się poznać" so category name is dsp17).
 My project for dsp17 is an application in Python/Django for my own use. User story which
-is behind my project is that when using untrusted network I don't want to login to my personal accounts to store interesting stuff I've found. So I want to
-want to have a "box" for interesting urls. Another user story it that sometimes when using untrusted network I want to be able to chat with my boyfriend -
+is behind my project is when using untrusted network I don't want to login to my personal accounts to store interesting stuff I've found. So I want to have a "box" for interesting urls. Another user story it that sometimes when using untrusted network I want to be able to chat with my boyfriend -
 one solution is using qTox, but it requires an installation. So I want to chat using frisor application.
 
 ### Must requirements
