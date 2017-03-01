@@ -14,7 +14,7 @@ description              : "Programming blog"
 url                      : "https://vevurka.github.io"
 baseurl                  : ""
 repository               : "vevurka/vevurka.github.io"
-teaser                   : "" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/flower.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -28,10 +28,9 @@ analytics:
   google:
     tracking_id: "UA-92843137-1"
 
-# Site Author
 author:
   name             : "vevurka"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio.png"
   bio              : "I'm a software developer. I'm keen on Python and Erlang."
   location         : "Warsaw"
   github           : "vevurka"
@@ -158,3 +157,5 @@ defaults:
       comments: true
       share: true
       related: true
+      header:
+        overlay_color: "#333"
