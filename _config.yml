@@ -22,6 +22,11 @@ comments:
   disqus:
     shortname: https-vevurka-github-io
 
+analytics:
+  provider: "google-universal"
+  google:
+    tracking_id: "UA-92843137-1"
+
 # Site Author
 author:
   name             : "vevurka"
