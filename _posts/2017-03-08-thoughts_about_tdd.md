@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  Some thoughts about TDD
-date:   2017-03-08 16:44:01 +0100
+date:   2017-03-08 16:43:01 +0100
 categories: [dsp17, quality, python]
 excerpt: TDD or not TDD
 ---
@@ -75,7 +75,7 @@ I've to know what is an input and output.
 self-checking.
 * I think about corner cases earlier, because I've to think about possible input and outputs at very early stage.
 * I think more about design - I don't rush into actual coding, because sometimes it's harder to start from tests.
-* My code is testable, because I actually write tests ;).
+* My code is testable, because I actually write tests.
 
 #### Some other notes and tips
 * TDD is good for frame of mind - you can see good results (passing tests) faster.
