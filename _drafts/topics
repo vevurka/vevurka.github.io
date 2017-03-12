@@ -1,0 +1,29 @@
+* fix .archive__item-teaser and favicon.ico
+
+In Erlang/OTP we have gen_server (generic server) behaviour. It's a server process
+
+* escript
+* eunit in escript
+* memory managment - java, erlang
+* escript
+* eunit in escript
+* memory managment - java, erlang
+* soap, rest
+* rpc
+* process in erlang, greenlets, actor model
+
+WSDL - WebServices Description Language
+
+REST -
+* performance
+* scalibility
+* simplicity of an Uniform Interface
+* Modifiability of components to meet changing needs
+* Visibility of communication between components by service agents
+* Portability of components byh moving program code with the data
+* Rebialility is the resistance to failure at the system level in the presence of failures within components,
+connectors and data
+
+
+Hacking
+wechall.com
