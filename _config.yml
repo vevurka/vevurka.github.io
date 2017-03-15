@@ -14,9 +14,10 @@ description              : "Programming blog"
 url                      : "https://vevurka.github.io"
 baseurl                  : ""
 repository               : "vevurka/vevurka.github.io"
-teaser                   : "/assets/images/flower.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : false #true #, false (default)
 words_per_minute         : 200
+og_image                 : "/assets/images/teaser.gif"
+teaser                   : "/assets/images/teaser.gif"
 comments:
   provider               : disqus # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
