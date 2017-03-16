@@ -160,3 +160,6 @@ done in **Python**, because it lacks pointers.
 You can find code from this post here: [gist](https://gist.github.com/vevurka/539d82eb0ba60c16aa8aa65610c627df).
 Hopefully you enjoyed reading about this approach for implementing *graph* structure. Let me know your thoughts or
 remarks in comments!
+
+$$ 55 $$
+ll
