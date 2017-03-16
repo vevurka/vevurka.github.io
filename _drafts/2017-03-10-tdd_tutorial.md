@@ -1,4 +1,10 @@
-
+---
+layout: single
+title: TDD quasi tutorial
+date:   2017-03-15 12:40:02 +0100
+categories: [dsp17, cs]
+excerpt: How to start with TDD?
+---
 
 ## How to start with TDD? (*quasi tutorial*)
 

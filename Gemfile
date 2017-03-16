@@ -6,6 +6,7 @@ gem "jekyll", "3.3.1"
 gem 'rb-inotify'
 
 gem 'jekyll-github-metadata'
+gem 'jemoji'
 
 group :jekyll_plugins do
   gem "jekyll-paginate"
