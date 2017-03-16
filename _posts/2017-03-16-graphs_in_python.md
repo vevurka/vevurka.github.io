@@ -35,10 +35,10 @@ So for *graph* from this picture:
 the adjacent lists for each vertex will look like this:
 
 
-* for `A`: `[B, C, D]`
-* for `B`: `[A]`
-* for `C`: `[A, D]`
-* for `D`: `[A, C]`
+* for $$A$$: $$[B, C, D]$$
+* for $$B$$: $$[A]$$
+* for $$C$$: $$[A, D]$$
+* for $$D$$: $$[A, C]$$
 
 In **C++** we can achieve this kind of structure by creating a node structure for storing an array of pointers
 to other nodes (better to use `std::vector` than regular array):
@@ -81,12 +81,12 @@ with adding edges and vertices like this:
 
 I've used here two basic data structures from **Python Standard Library**: `dict` and `set`. My `Graph` is
 a dictionary in which I store vertices labels. Usage of `dict` allows quick access to elements.
-In Python `dict` is implemented as a hash table, so the average time complexity of accessing an element is `O(1)` -
+In Python `dict` is implemented as a hash table, so the average time complexity of accessing an element is $$O(1)$$ -
 the same as when using `std::vector` in **C++**.
 For storing list of adjacent vertices I've used `set` data structure, because set gets rid of duplicates. Actually in
 **Python** `set` is also implemented as hash table - it is a `dict` which stores dummy values. Using this structure
-allows us to check if vertex is adjacent to other vertex in average time complexity `O(1)` (the worst is `O(|E|)`
-where `|E|` is number of edges in *graph*).
+allows us to check if vertex is adjacent to other vertex in average time complexity $$O(1)$$ (the worst is $$O(|E|)$$
+where $$|E|$$ is number of edges in *graph*).
 
 
 ### There is shorter implementation...
@@ -135,12 +135,12 @@ an edge.
 
 Deleting an edge is quite easy - we just have to remove corresponding vertices from two sets. For deleting a vertex we
 need to iterate over its adjacency set, remove an edge between this vertex and each neighbour, then finally remove it
-from our dictionary. The average time complexity is `O(deg(|V|))` (degree of vertex - number of its neighbours),
-because checking if vertex is in set  of edges is in `O(1)`, deleting elements from set is `O(1)` and deleting
-from dictionary is also implemented  in `O(1)`, so only iterating through vertex neighbours matters. For
-*sparse graphs* each vertex degree is small, so it will be almost `O(1)`.
-Unfortunately the worst case complexity scenario can become `O(|V|^2)`, where `|V|` is number of vertices.
-It's because worst scenario complexity of deleting from set is `O(|V|)`) and our vertex can have at most `|V| - 1`
+from our dictionary. The average time complexity is $$O(deg(|V|))$$ (degree of vertex - number of its neighbours),
+because checking if vertex is in set  of edges is in $$O(1)$$, deleting elements from set is $$O(1)$$ and deleting
+from dictionary is also implemented  in $$O(1)$$, so only iterating through vertex neighbours matters. For
+*sparse graphs* each vertex degree is small, so it will be almost $$O(1)$$.
+Unfortunately the worst case complexity scenario can become $$O(|V|^2)$$, where $$|V|$$ is number of vertices.
+It's because worst scenario complexity of deleting from set is $$O(|V|)$$) and our vertex can have at most $$|V| - 1$$
 neighbours, when *graph* is dense.
 
 ### Pros and cons of using list adjacency approach in **Python**
@@ -148,18 +148,16 @@ neighbours, when *graph* is dense.
 List adjacency implementation of a *graph* is easy to understand, also it's quite readable (if you don't use any magic
 approaches like `defaultdict(set)`).
 It's good for *sparse graphs*, because it doesn't use any additional memory - only what's necessary to store vertices
-and edges, so `O(|V| + 2 * |E|)`.
+and edges, so $$O(|V| + 2 * |E|)$$.
 One of the biggest cons is that for *dense graphs* the dictionary operations can have a worst case scenario
-about `O(|V|)`. The deletion of vertex can have quite bad time complexity (even `O(|V|^2)`...) - it can be done much
+about $$O(|V|)$$. The deletion of vertex can have quite bad time complexity (even $$O(|V|^2)$$...) - it can be done much
 faster using other approaches. I guess in **C++** it can be done better even with this approach, because we can just set
 a value of a node to `null` and after deletion of vertex, pointers of this vertex in other vertices adjacency lists will
 point to this `null`. It's good to get rid of those `null pointers` in adjacency lists, but it can be postponed (for example
 only done for each adjacency list when searching adjacent vertex). I think this amortized approach can't be easily
 done in **Python**, because it lacks pointers.
 
+
 You can find code from this post here: [gist](https://gist.github.com/vevurka/539d82eb0ba60c16aa8aa65610c627df).
 Hopefully you enjoyed reading about this approach for implementing *graph* structure. Let me know your thoughts or
 remarks in comments!
-
-$$ 55 $$
-ll
