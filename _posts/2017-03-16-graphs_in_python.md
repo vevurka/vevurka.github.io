@@ -157,10 +157,6 @@ point to this `null`. It's good to get rid of those `null pointers` in adjacency
 only done for each adjacency list when searching adjacent vertex). I think this amortized approach can't be easily
 done in **Python**, because it lacks pointers.
 
-
-$$ 55 $$
-
 You can find code from this post here: [gist](https://gist.github.com/vevurka/539d82eb0ba60c16aa8aa65610c627df).
 Hopefully you enjoyed reading about this approach for implementing *graph* structure. Let me know your thoughts or
 remarks in comments!
-\$$ 5 + 5 $$
