@@ -25,9 +25,9 @@ comments:
 future: false
 
 analytics:
-  provider: "google-universal"
-  google:
-    tracking_id: "UA-92843137-1"
+  provider: "custom" #google-universal"
+#  google:
+#    tracking_id: "UA-92843137-1"
 
 author:
   name             : "vevurka"
