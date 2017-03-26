@@ -1,3 +1,9 @@
+### Testing views after redirect Django
+self.client.get/post(follow=True)
+
+### AMQT MQQT
+
+
 * fix .archive__item-teaser and favicon.ico
 
 In Erlang/OTP we have gen_server (generic server) behaviour. It's a server process
