@@ -22,7 +22,7 @@ comments:
   provider               : disqus # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname: https-vevurka-github-io
-future: true
+future: false
 
 analytics:
   provider: "custom" #google-universal"
