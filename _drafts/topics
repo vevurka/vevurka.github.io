@@ -1,6 +1,11 @@
 ### Testing views after redirect Django
 self.client.get/post(follow=True)
 
+* time/memory complexity
+* parallelizm and procesor
+
+https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fvevurka.github.io
+
 ### AMQT MQQT
 
 
@@ -17,18 +22,6 @@ In Erlang/OTP we have gen_server (generic server) behaviour. It's a server proce
 * soap, rest
 * rpc
 * process in erlang, greenlets, actor model
-
-WSDL - WebServices Description Language
-
-REST -
-* performance
-* scalibility
-* simplicity of an Uniform Interface
-* Modifiability of components to meet changing needs
-* Visibility of communication between components by service agents
-* Portability of components byh moving program code with the data
-* Rebialility is the resistance to failure at the system level in the presence of failures within components,
-connectors and data
 
 
 Hacking
