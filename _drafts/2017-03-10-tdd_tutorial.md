@@ -2,7 +2,7 @@
 layout: single
 title: TDD quasi tutorial
 date:   2017-04-15 12:40:02 +0100
-categories: [dsp17, cs]
+categories: [dsp17, quality]
 excerpt: How to start with TDD?
 ---
 

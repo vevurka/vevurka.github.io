@@ -4,6 +4,21 @@ self.client.get/post(follow=True)
 * time/memory complexity
 * parallelizm and procesor
 
+
+
+* django urls regexes
+* alembic migrations
+* coding standards - pep
+
+---
+layout: single
+title: boto S3
+date:   2017-04-15 12:40:02 +0100
+categories: [dsp17, cs]
+excerpt: boto s3 buckets
+---
+
+
 https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fvevurka.github.io
 
 ### AMQT MQQT

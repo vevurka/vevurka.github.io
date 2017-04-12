@@ -1,3 +1,11 @@
+---
+layout: single
+title: Testing in Django
+date:   2017-04-15 12:40:02 +0100
+categories: [dsp17, django, python]
+excerpt: TODO
+---
+
 
 # Testing in **Django**
 
