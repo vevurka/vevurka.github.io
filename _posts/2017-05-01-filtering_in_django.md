@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Filtering in Django
-date:   2017-05-01 21:34:02 +0200
+date:   2017-05-01 21:49:02 +0200
 categories: [dsp17, django, python]
 excerpt: About filtering and managing multiple third party libraries in Django
 header:
