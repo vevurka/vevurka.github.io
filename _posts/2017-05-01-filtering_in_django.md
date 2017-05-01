@@ -165,5 +165,6 @@ So far for me it's impossible to use any *third-party* **Django** libraries with
 looking to their source.
 Documentation usually doesn't cover all special cases. On the other side life is to short
 to read whole documentation without need :wink:... These libraries present different levels of
-quality, code sometimes is quite bad or designed in strange way. Don't expect they
+*quality*, code sometimes is quite bad or designed in strange way. Don't expect they
 will work well together.
+
