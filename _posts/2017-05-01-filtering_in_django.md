@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Filtering in Django
-date:   2017-05-01 21:34:02 +0100
+date:   2017-05-01 21:34:02 +0200
 categories: [dsp17, django, python]
 excerpt: About filtering and managing multiple third party libraries in Django
 header:
@@ -98,7 +98,7 @@ to use nice *bootstrap form* in my template. Because I added `url_filter` to
 view context, I can access filter form by `url_filter.form`:
 
 {% highlight django %}
-{% raw %}
+    {% raw %}
     <!-- index.html -->
     <form action="" method="get">
         <legend>Filtering</legend>
@@ -111,7 +111,7 @@ view context, I can access filter form by `url_filter.form`:
     <!-- ... -->
 
     {% bootstrap_pagination url_list %}
-{% endraw %}
+    {% endraw %}
 {% endhighlight %}
 
 That was it, but it happen that it broke my **pagination** - after changing page, my *filter
@@ -153,7 +153,7 @@ But I saw hope in `extra` parameter of the same `get_pagination_context` functio
 After some googling I came up this solution - adding an `extra` parameter to
 `bootstrap_pagination` tag with all parameters from request:
 
-{% highlight python %}
+{% highlight django %}
 {% raw %}
     {% bootstrap_pagination url_list extra=request.GET.urlencode %}
 {% endraw %}
