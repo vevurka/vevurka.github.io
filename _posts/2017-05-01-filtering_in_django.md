@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Filtering in Django
-date:   2017-05-01 21:17:02 +0100
+date:   2017-05-01 21:34:02 +0100
 categories: [dsp17, django, python]
 excerpt: About filtering and managing multiple third party libraries in Django
 header:
@@ -110,7 +110,6 @@ view context, I can access filter form by `url_filter.form`:
     <!-- url list -->
     <!-- ... -->
 
-    <!-- pagination -->
     {% bootstrap_pagination url_list %}
 {% endraw %}
 {% endhighlight %}
@@ -168,7 +167,3 @@ Documentation usually doesn't cover all special cases. On the other side life is
 to read whole documentation without need :wink:... These libraries present different levels of
 quality, code sometimes is quite bad or designed in strange way. Don't expect they
 will work well together.
-
-
-
-
