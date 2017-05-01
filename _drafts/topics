@@ -1,32 +1,24 @@
-### Testing views after redirect Django
-self.client.get/post(follow=True)
+To fix:
+* https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fvevurka.github.io
+* fix .archive__item-teaser and favicon.ico
 
+Soft:
+* Hackatons
+* TreeMap
+
+General:
 * time/memory complexity
 * parallelizm and procesor
+* amqt mqqt
 
-
-
+Python:
 * django urls regexes
 * alembic migrations
 * coding standards - pep
+* boto S3 buckets
+* Testing views after redirect Django: self.client.get/post(follow=True)
 
----
-layout: single
-title: boto S3
-date:   2017-04-15 12:40:02 +0100
-categories: [dsp17, cs]
-excerpt: boto s3 buckets
----
-
-
-https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fvevurka.github.io
-
-### AMQT MQQT
-
-
-* fix .archive__item-teaser and favicon.ico
-
-In Erlang/OTP we have gen_server (generic server) behaviour. It's a server process
+Erlang:
 
 * escript
 * eunit in escript
@@ -37,10 +29,3 @@ In Erlang/OTP we have gen_server (generic server) behaviour. It's a server proce
 * soap, rest
 * rpc
 * process in erlang, greenlets, actor model
-
-
-Hacking
-wechall.com
-
-W TDD thoughts
-**** Brakuje mi tu części, że piszemy *tylko* tyle kodu ile potrzeba do naprawienia testu i *tylko* tyle ile potrzeba do testu aby się popsuł

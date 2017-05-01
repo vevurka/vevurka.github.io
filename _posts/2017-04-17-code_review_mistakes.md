@@ -90,7 +90,7 @@ When using frameworks not all code has to be in source files.
 
 ### Tests which test nothing
 
-The ests are as **important** as the code, so you also should check them carefully. Each **test name** should indicate
+The tests are as **important** as the code, so you also should check them carefully. Each **test name** should indicate
 *what is tested*, so if you are unsure, maybe it's time to ask an author. Also there should be at least
 **one assertion** in each test.
 
