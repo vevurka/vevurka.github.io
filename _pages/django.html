@@ -1,0 +1,16 @@
+---
+layout: archive
+author_profile: true
+permalink: /categories/django
+category_name: django
+title: Django
+---
+{% include group-by-array collection=site.posts field="categories" %}
+{% for category in group_names %}
+    {% if category == "django" %}
+        {% assign posts = group_items[forloop.index0] %}
+        {% for post in posts %}
+            {% include archive-single.html %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}

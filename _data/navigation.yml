@@ -1,7 +1,13 @@
 main:
-  - title: "Categories"
-    url: /categories
+  - title: "Python"
+    url: /categories/python
+  - title: "Django"
+    url: /categories/django
   - title: "DSP17"
     url: /categories/dsp17
+  - title: "Quality"
+    url: /categories/quality
+  - title: "Other"
+    url: /categories/other
   - title: "About"
     url: /about

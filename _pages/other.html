@@ -1,0 +1,42 @@
+---
+layout: archive
+author_profile: true
+permalink: /categories/other
+category_name: other
+title: Other
+---
+
+{% include group-by-array collection=site.posts field="categories" %}
+{% for category in group_names %}
+    {% if category == "git" %}
+        {% assign posts = group_items[forloop.index0] %}
+        <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+        {% for post in posts %}
+            {% include archive-single.html %}
+        {% endfor %}
+    {% elsif category == "architecture" %}
+        {% assign posts = group_items[forloop.index0] %}
+        <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+        {% for post in posts %}
+            {% include archive-single.html %}
+        {% endfor %}
+    {% elsif category == "hacking" %}
+        {% assign posts = group_items[forloop.index0] %}
+        <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+        {% for post in posts %}
+            {% include archive-single.html %}
+        {% endfor %}
+    {% elsif category == "cs" %}
+        {% assign posts = group_items[forloop.index0] %}
+        <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+        {% for post in posts %}
+            {% include archive-single.html %}
+        {% endfor %}
+    {% elsif category == "hello_world" %}
+        {% assign posts = group_items[forloop.index0] %}
+        <h2 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h2>
+        {% for post in posts %}
+            {% include archive-single.html %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}

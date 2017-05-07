@@ -1,0 +1,16 @@
+---
+layout: archive
+author_profile: true
+permalink: /categories/quality
+category_name: quality
+title: Quality
+---
+{% include group-by-array collection=site.posts field="categories" %}
+{% for category in group_names %}
+    {% if category == "quality" %}
+        {% assign posts = group_items[forloop.index0] %}
+        {% for post in posts %}
+            {% include archive-single.html %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
