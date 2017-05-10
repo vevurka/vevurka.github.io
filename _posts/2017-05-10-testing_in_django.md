@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Where are my tests?
-date:   2017-05-10 22:40:02 +0200
+date:   2017-05-10 20:36:02 +0200
 categories: [dsp17, django, python]
 excerpt: About some issues you may have with Django test framework
 header:

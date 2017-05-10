@@ -69,5 +69,5 @@ Don't be lazy - **rebase** your branch before **merging**. It will help you avoi
 many issues when **revert** is needed. Also the **git history** will be much more readable -
 there will be no commits between your changes from that **branch**. Also I think
 it's a good idea to **squash** all commits into one before merge, because
-when project becomes big it's more easy to study its history - there will be
+when project becomes big, it's more easy to study its history - there will be
 one **commit** per *feature*.
