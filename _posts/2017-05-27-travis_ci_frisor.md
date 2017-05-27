@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Travis CI for Python project
-date:   2017-05-27 21:58:02 +0200
+date:   2017-05-27 22:00:00 +0200
 categories: [dsp17, git, quality, django, python]
 excerpt: Setting up Travis CI for github repo in Python
 ---
