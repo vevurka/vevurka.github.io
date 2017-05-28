@@ -1,6 +1,6 @@
 To fix:
 * https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fvevurka.github.io
-* fix .archive__item-teaser and favicon.ico
+* fix .archive__item-teaser
 
 Soft:
 * Hackatons
@@ -16,13 +16,9 @@ Python:
 * alembic migrations
 * coding standards - pep
 * boto S3 buckets
-* Testing views after redirect Django: self.client.get/post(follow=True)
 
 Erlang:
 
-* escript
-* eunit in escript
-* memory managment - java, erlang
 * escript
 * eunit in escript
 * memory managment - java, erlang
