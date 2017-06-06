@@ -9,7 +9,7 @@ excerpt: Short overview on P, NP and PSPACE sets of decision problems
 This post is an *introduction* for understanding some *important* and *unsolved*
 problems in **Computer Science** and reasons why they matter.
 I'm assuming you know a bit about
-[Touring machine](https://en.wikipedia.org/wiki/Turing_machine) - in short words
+[Turing machine](https://en.wikipedia.org/wiki/Turing_machine) - in short words
 it's an **abstract machine**, which can simulate any *algorithm* we can write
 in any *programming language* using current model of *computation* (so for example on
 your computer).
@@ -30,7 +30,7 @@ and these sets I want to describe.
 ## $$P$$ problems
 
 **Problems** in $$P$$ are those, which can be solved using **polynomial time** by
-**deterministic Touring machine**.
+**deterministic Turing machine**.
 {: .notice--primary}
 
 Intuitively you can think that for problem in $$P$$ it's possible to write an
@@ -67,10 +67,10 @@ $$NP$$ (**N**ondeterministic **P**olynomial time) **problems** are these for whi
 {: .notice--primary}
 
 In other words for $$NP$$ **problems** we
-will need a **non-deterministic Touring machine** to solve them in **polynomial time**
+will need a **non-deterministic Turing machine** to solve them in **polynomial time**
 for sure
 (such machine exists only in theory). This also means
-that when solving problem in $$NP$$ using **deterministic Touring machine** we *might* need
+that when solving problem in $$NP$$ using **deterministic Turing machine** we *might* need
 an **exponential time**. Be aware that all $$P$$ problems are also in $$NP$$ set, because
 we can use actual solving method as **verification**.
 
@@ -93,7 +93,7 @@ that it's not by their *definition*. They can be also in **subexponential** time
 ## $$PSPACE$$ problems
 
 $$PSPACE$$ problems are these, which can be solved by **deterministic
-Touring machine** using **polynomial space** (memory).
+Turing machine** using **polynomial space** (memory).
 {: .notice--primary}
 
 Note that this time we are talking about **space** (**memory**) instead of time!
