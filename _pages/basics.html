@@ -1,0 +1,16 @@
+---
+layout: archive
+author_profile: true
+permalink: /categories/basics
+category_name: basics
+title: Basics
+---
+{% include group-by-array collection=site.posts field="categories" %}
+{% for category in group_names %}
+    {% if category == "basics" %}
+        {% assign posts = group_items[forloop.index0] %}
+        {% for post in posts %}
+            {% include archive-single.html %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
