@@ -63,7 +63,7 @@ some **variable** (in this case it's called `myArray`):
 
 {% highlight javascript %}
     // create an array
-    var myArray = ["a", "b", "c"]; // I want to have a, b and c in my drawers!
+    var myArray = new Array("a", "b", "c"); // I want to have a, b and c in my drawers!
 
     console.log(myArray); // will print ["a", "b", "c"]
 {% endhighlight %}
@@ -103,7 +103,7 @@ But for **Java**, **Golang**, **JavaScript**, **C++**, **C**, **C#**
 and plenty other it is the same.
 
 {% highlight javascript %}
-    var myArray = ["a", "b", "c"];
+    var myArray = new Array("a", "b", "c");
 
     // access first element
     console.log(myArray[0]); // prints a
@@ -142,6 +142,7 @@ you have to **declare a type**. In this example:
     System.out.println(myArray[0]); // prints 1
     myArray[0] = 11;
     System.out.println(myArray[0]); // prints 11
+
 {% endhighlight %}
 
 `int[]` means that we declare an **array of integers**. **Setting** and
@@ -158,6 +159,7 @@ size of our **array**:
     Console.WriteLine(myArray[1]); // prints 2
     myArray[1] = 22;
     Console.WriteLine(myArray[1]); // prints 22
+
 {% endhighlight %}
 
 #### C++
@@ -177,6 +179,7 @@ in an **array** like this:
     printf("%d\n", myArray[4]); // prints 5
     myArray[4] = 55;
     printf("%d\n", myArray[4]); //prints 55
+
 {% endhighlight %}
 
 #### Golang
@@ -189,6 +192,7 @@ This time number of elements is going to be in square brackets before
 	fmt.Println(myArray[2])  // prints 3
 	myArray[2] = 3
 	fmt.Println(myArray[2]) // prints 33
+
 {% endhighlight %}
 
 #### Python
@@ -207,6 +211,7 @@ You can put other things in it, check documentation.
     print(my_array[3]) # prints 4
     my_array[3] = 44
     print(my_array[3] # prints 44
+
 {% endhighlight %}
 
 #### Erlang
@@ -221,6 +226,7 @@ Anyway the same as in **Python**, better to use `lists` instead of **arrays**.
     Elem = array:get(0, Array). %% it's 0
     Array1 = array:set(0, 11, Array).
     Elem1 = array:get(0, Array1). %% it's 11
+
 {% endhighlight %}
 
 ### Further reading
