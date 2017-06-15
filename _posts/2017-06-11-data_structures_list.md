@@ -5,7 +5,7 @@ date:   2017-06-16 00:49:02 +0200
 categories: [cs, basics, algorithms]
 excerpt: What is a list? Examples of lists in some programming languages.
 header:
-    teaser: /assets/images/2017-06-11_train.jpg
+    teaser: /assets/images/2017-06-16_train.jpg
 ---
 
 Here is very basic description on what is an **list**. I tried to describe
