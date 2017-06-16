@@ -8,7 +8,8 @@ header:
     teaser: /assets/images/2017-06-16_train.jpg
 ---
 
-Here is very basic description on what is an **list**. I tried to describe
+Here is very basic description on what is an **list** (actually *single*
+**linked list**). I tried to describe
 things as *simple as possible*, sometimes skipping some details.
 This post is meant to be for
 people who just started programming.
