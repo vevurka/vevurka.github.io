@@ -153,10 +153,25 @@ There are a few ways of creating an **array** in **Java**, I think this is
 the simplest one:
 {% highlight java %}
     List<int> myList = Arrays.asList(1, 2, 3);
-    myList.add(4);
     myList.get(1); // returns 2 because it's the second element
-
 {% endhighlight %}
+but the *downside* is that it cannot be modified
+(it's a *immutable* **list**).
+Thanks to Jakub Dyszkiewicz for pointing that out!
+
+The other way:
+
+{% highlight java %}
+        List myList = new ArrayList();
+        myList.add(1);
+        myList.add(2);
+        myList.add(3);
+        System.out.println(myList.get(0)); //prints first element: 1
+{% endhighlight %}
+
+This time `myList` is **mutable**, so we can *add elements* after it is created.
+I will not cover here more about *mutability* and *immutability*, but
+it's an interesting topic - maybe in future posts?
 
 ### **C#**
 
@@ -216,6 +231,8 @@ There are more interesting operations on **lists** like:
 You can also read a *documentation* on **lists** in your favorite
 programming language. Also it's nice to read a bit
 what is *pattern matching* and *list comprehensions*.
+I think it's also good to know more on *mutability*.
+
 If you have any questions - leave a comment!
 
 ### Difference between array and list
