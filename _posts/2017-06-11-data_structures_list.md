@@ -152,7 +152,7 @@ from **objective** and **functional** languages.
 There are a few ways of creating an **array** in **Java**, I think this is
 the simplest one:
 {% highlight java %}
-    List<int> myList = Arrays.asList(1, 2, 3);
+    List myList = Arrays.asList(1, 2, 3);
     myList.get(1); // returns 2 because it's the second element
 {% endhighlight %}
 but the *downside* is that it cannot be modified
