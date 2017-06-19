@@ -105,7 +105,7 @@ sass:
 
 # Outputting
 permalink: :categories/:title/
-paginate: 10 # amount of posts to show
+paginate: 15 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -165,3 +165,14 @@ defaults:
       related: true
       header:
         overlay_color: "#333"
+  - scope:
+      path: ""
+      type: tags
+    values:
+      layout: tag_view
+      author_profile: true
+
+collections:
+  tags:
+    output: true
+    permalink: /tags/:name/

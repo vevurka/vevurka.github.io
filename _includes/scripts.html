@@ -1,4 +1,49 @@
-<script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/jqcloud.min.js' | absolute_url }}"></script>
+
+<script type="text/javascript">
+
+$(function() {
+    var tag_array = [
+        {text: "algorithms", weight:  4, link: "/tags/#algorithms"},
+        {text: "code-review", weight:  2, link: "/tags/#code-review"},
+        {text: "computer-science", weight:  6, link: "/tags/#computer-science"},
+        {text: "data-structures", weight:  4, link: "/tags/#data-structures"},
+        {text: "debug-story", weight:  4, link: "/tags/#debug-story"},
+        {text: "design", weight:  3, link: "/tags/#design"},
+        {text: "django", weight:  10, link: "/tags/#django"},
+        {text: "environment", weight:  3, link: "/tags/#environment"},
+        {text: "forms", weight:  2, link: "/tags/#forms"},
+        {text: "frisor", weight:  7, link: "/tags/#frisor"},
+        {text: "git", weight:  3, link: "/tags/#git"},
+        {text: "graph", weight:  2, link: "/tags/#graph"},
+        {text: "hacking", weight:  1, link: "/tags/#hacking"},
+        {text: "how-to", weight: 2, link: "/tags/#how-to"},
+        {text: "kafka", weight:  1, link: "/tags/#kafka"},
+        {text: "mistakes", weight:  5, link: "/tags/#mistakes"},
+        {text: "non-technical", weight:  2, link: "/tags/#non-technical"},
+        {text: "overview", weight:  5, link: "/tags/#overview"},
+        {text: "programming", weight:  11, link: "/tags/#programming"},
+        {text: "python", weight:  13, link: "/tags/#python"},
+        {text: "quality", weight:  4, link: "/tags/#quality"},
+        {text: "resources", weight:  1, link: "/tags/#resources"},
+        {text: "software-development", weight:  6, link: "/tags/#software-development"},
+        {text: "tdd", weight:  1, link: "/tags/#tdd"},
+        {text: "testing", weight:  2, link: "/tags/#testing"},
+        {text: "travis", weight:  2, link: "/tags/#travis"}
+      ];
+    $('#keywords-author').jQCloud(tag_array, {
+        shape: 'rectangular',
+        colors: ["#800026", "#bd0026",  "#e31a1c",],
+        fontSize: {
+            from: 0.15,
+            to: 0.05
+            }
+        });
+
+    $('#keywords-tags').jQCloud(tag_array, {autoResize: true});
+});
+</script>
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
