@@ -3,6 +3,7 @@ layout: single
 title: Travis CI for Python project
 date:   2017-05-27 22:00:00 +0200
 categories: [dsp17, git, quality, django, python]
+tags: [travis, git, software-development, frisor, python, django, environment]
 excerpt: Setting up Travis CI for github repo in Python
 header:
     teaser: /assets/images/cat_computer_wtf.jpg

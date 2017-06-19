@@ -4,6 +4,7 @@ title: Code review
 date:   2017-04-07 20:10:02 +0200
 categories: [dsp17, quality]
 excerpt: How to start with code review?
+tags: [code-review, quality, software-development, how-to, overview]
 ---
 
 ## What is **code review**?

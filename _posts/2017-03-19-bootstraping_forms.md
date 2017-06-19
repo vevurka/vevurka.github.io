@@ -3,6 +3,7 @@ layout: single
 title: Bootstraping Django Forms nightmare
 date:   2017-03-19 13:20:02 +0100
 categories: [dsp17, python]
+tags: [python, django, programming, forms, how-to, frisor]
 excerpt: About finding the best way to use bootstrap in Django Forms.
 ---
 

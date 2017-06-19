@@ -3,6 +3,7 @@ layout: single
 title: Debugging kafka client in Python
 date:   2017-05-14 23:31:02 +0200
 categories: [dsp17, python, debug]
+tags: [python, kafka, mistakes, debug-story]
 excerpt: What to do if you want to stop kafka consumer properly?
 ---
 

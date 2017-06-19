@@ -3,6 +3,7 @@ layout: single
 title: Graphs in Python
 date:   2017-03-16 13:15:02 +0100
 categories: [dsp17, python]
+tags: [graph, computer-science, python, data-structures, algorithms, programming]
 excerpt: How to represent graph structure in Python?
 ---
 

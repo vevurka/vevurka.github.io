@@ -3,6 +3,7 @@ layout: single
 title:  Adventures with templates
 date:   2017-03-13 00:00:01 +0100
 categories: [dsp17, python]
+tags: [python, django, frisor, programming, how-to]
 excerpt: About adding first django template to my urls box - frisor.
 ---
 

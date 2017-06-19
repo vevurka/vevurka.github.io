@@ -3,6 +3,7 @@ layout: single
 title:  Setting up frisor application
 date:   2017-03-03 17:40:02 +0100
 categories: [dsp17, python]
+tags: [programming, django, frisor, python, environment, how-to]
 excerpt: Django application set up.
 ---
 

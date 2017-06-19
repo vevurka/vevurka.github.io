@@ -3,6 +3,7 @@ layout: single
 title:  Some thoughts about TDD
 date:   2017-03-08 16:43:01 +0100
 categories: [dsp17, quality, python]
+tags: [tdd, testing, quality, software-development]
 excerpt: TDD or not TDD
 ---
 

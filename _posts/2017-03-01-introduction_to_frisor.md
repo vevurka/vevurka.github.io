@@ -3,6 +3,7 @@ layout: single
 title:  Introduction to frisor
 date:   2017-03-01 12:20:01 +0100
 categories: dsp17
+tags: [programming, django, python, design, frisor]
 excerpt: About my dsp17 project
 ---
 

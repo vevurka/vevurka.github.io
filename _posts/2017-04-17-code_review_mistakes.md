@@ -4,6 +4,7 @@ title: Mistakes in code review
 date:   2017-04-17 23:02:02 +0200
 categories: [dsp17, quality]
 excerpt: They happen all the time...
+tags: [code-review, quality, software-development, mistakes, how-to]
 header:
     teaser: /assets/images/cat_computer.jpg
 ---

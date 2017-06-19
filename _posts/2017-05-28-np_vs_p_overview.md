@@ -3,6 +3,7 @@ layout: single
 title: P versus NP
 date:   2017-05-28 23:46:02 +0200
 categories: [dsp17, cs]
+tags: [computer-science, overview]
 excerpt: Short overview on P, NP and PSPACE sets of decision problems
 ---
 

@@ -3,6 +3,7 @@ layout: single
 title: Two important decision problems
 date:   2017-06-06 21:09:02 +0200
 categories: [dsp17, cs]
+tags: [computer-science, overview]
 excerpt: Overview on SAT and QBF
 ---
 

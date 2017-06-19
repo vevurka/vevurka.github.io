@@ -3,6 +3,7 @@ layout: single
 title: Don't forget about git rebase!
 date:   2017-05-07 20:54:02 +0200
 categories: [dsp17, git, quality]
+tags: [git, software-development, mistakes, debug-story]
 excerpt: One of my git stories
 ---
 

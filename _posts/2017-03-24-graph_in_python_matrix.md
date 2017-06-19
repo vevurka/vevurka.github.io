@@ -3,6 +3,7 @@ layout: single
 title: Matrix graph representation in Python
 date:   2017-03-24 12:15:02 +0100
 categories: [dsp17, python, cs]
+tags: [graph, computer-science, python, data-structures, algorithms, programming]
 excerpt: How to represent graph structure as matrix in Python?
 ---
 

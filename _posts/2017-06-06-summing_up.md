@@ -3,6 +3,7 @@ layout: single
 title: Summing up DSP17
 date:   2017-06-06 21:32:02 +0200
 categories: [dsp17]
+tags: [non-technical]
 excerpt: Some thoughts on my participation in DSP17 contest
 ---
 

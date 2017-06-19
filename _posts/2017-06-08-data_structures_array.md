@@ -3,6 +3,7 @@ layout: single
 title: Basic data structures - array
 date:   2017-06-08 23:48:02 +0200
 categories: [cs, basics, algorithms]
+tags: [programming, overview, computer-science, algorithms, data-structures]
 excerpt: What is an array? Examples of arrays in some programming languages.
 header:
     teaser: /assets/images/cat_computer.jpg

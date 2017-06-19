@@ -3,6 +3,7 @@ layout: single
 title: Basic data structures - list
 date:   2017-06-16 00:49:02 +0200
 categories: [cs, basics, algorithms]
+tags: [computer-science, data-structures, algorithms, overview]
 excerpt: What is a list? Examples of lists in some programming languages.
 header:
     teaser: /assets/images/2017-06-16_train.jpg

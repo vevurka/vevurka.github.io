@@ -4,6 +4,7 @@ title: Where are my tests?
 date:   2017-05-10 20:36:02 +0200
 categories: [dsp17, django, python]
 excerpt: About some issues you may have with Django test framework
+tags: [testing, django, python, quality, frisor]
 header:
     teaser: /assets/images/cat_computer_wtf.jpg
 ---

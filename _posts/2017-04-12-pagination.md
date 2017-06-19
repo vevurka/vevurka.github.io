@@ -3,6 +3,7 @@ layout: single
 title: Pagination in Django
 date:   2017-04-12 20:19:02 +0200
 categories: [dsp17, python, django]
+tags: [python, django, programming, frisor, how-to]
 excerpt: Pagination in Django works great!
 header:
     teaser: /assets/images/cat_computer_wtf.jpg
