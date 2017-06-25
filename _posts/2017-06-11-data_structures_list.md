@@ -90,13 +90,13 @@ there is box with letter *a*, in the second one - *b* and in the third one - *c*
 
 When we have a **train** it's quite easy to append another *train car with box*
 to it. We always append *new train cars* to the end of the **train**.
-The same is when *appending an element* to **list** - in **Python** we use `add`
+The same is when *appending an element* to **list** - in **Python** we use `append`
 method for this (in other programming languages it can be also called
-`append` or `push`):
+`add` or `push`):
 
 {% highlight python %}
     my_list = ["a", "b", "c"]
-    my_list.add("d")
+    my_list.append("d")
     print(my_list) # prints ["a", "b", "c", "d"]
 
 {% endhighlight %}
