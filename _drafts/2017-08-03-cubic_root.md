@@ -3,17 +3,13 @@ layout: single
 title: Cubic root from negative number in Python
 date:   2017-06-17 12:40:02 +0100
 categories: [cs, python]
-tags: [programming, computer-science, python, hacking]
-excerpt: Hac
+tags: [programming, computer-science, python, hacking, debug-story]
+excerpt: A hacky solution of how to calculate cubic root from negative number.
 ---
 
-Quite recently I've encountered a weird issue. I tried to calculate a cubic root from a negative number in Python:
+Quite recently I've encountered a weird issue - I tried to **calculate** a **cubic root** from a **negative** number in **Python**:
 
 {% highlight python %}
-    $ python3
-    Python 3.5.3 (default, May 10 2017, 15:05:55) 
-    [GCC 6.3.1 20161221 (Red Hat 6.3.1-1)] on linux
-    Type "help", "copyright", "credits" or "license" for more information.
     >>> import math
     >>> math.pow(8, 1/3)
     2.0
@@ -21,54 +17,57 @@ Quite recently I've encountered a weird issue. I tried to calculate a cubic root
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     ValueError: math domain error
- 
 {% endhighlight %}
 
+For **positive** numbers it works good. But it's kinda obvious
+that $$-8 ^ (1/3) = (-2) * (-2) * (-2)$$. So why the *second statement* causes an `ValueError`?
 
-But it's kinda obvious that $$-8 ^ (1/3) = (-2) * (-2) * (-2)$$. So why is this error?
-
-Next thing I tried to the same in JavaScript (it's easy to find a console in browser...):
+I tried to the same in **JavaScript** (it's easy to find a *console* in browser :wink ):
 
 {% highlight javascript %}
     console.log(Math.pow(8, 1/3)); // 2
     console.log(Math.pow(-8, 1/3)); // NaN
 {% endhighlight %}
 
-It seems that it worked the same, clearly the issue was in the underlying implementation. But first quick glance 
-on the workaround solution:
+For both **Python** and **JavaScript**
+clearly the issue is in the *underlying implementation*. I investigated this a bit, but let's take a quick glance
+on the **workaround** solution first:
 
 ## Workaround solution
 
 Anyway I needed to calculate that cubic root, so I used this workaround:
 
 {% highlight python %}
-    
+    import math
+
     def cubic_pow(n):
-        # TODO: write a code
+        if n < 0:
+            return -math.pow(-n, 1/3)
+        else:
+            return math.pow(n, 1/3)
 
 {% endhighlight %}
 
-That's because it's $$ -(-n) ^ \frac{1}{3} = n ^ \frac{1}{3} $$ for negative numbers.
+That's because it's $$ -(-n) ^ \frac{1}{3} = n ^ \frac{1}{3} $$ for **negative** numbers.
+It's not a big deal to write a separate function for calculating a **cubic root**
+from **negative** numbers, but still why do we need to do this? Why wasn't it
+implemented in a way, which allows to *calculate* such **roots**?
 
 ## Reason
 
 I started to be curious about the reason why it works in this way. It's always good to look into the source code - 
-I decided to start with sources of **Python**, but I was quite sure that I will end up with some C code.
-
+I decided to start with sources of **Python**, but I was quite sure that I will end up with some **C** code.
 
 ### Code sources of power implementation
 
-
-
-
-According to 
-[python-dev-guide](https://docs.python.org/devguide/) the repository of the Python is 
+According to
+[python-dev-guide](https://docs.python.org/devguide/) the repository of **Python** is
 here: [cpython](https://github.com/python/cpython).  
 
 
-I looked for some files with word math in the name (it would be reasonable to have math stuff from math lib in for example 
+I looked for some files with word `math` in the name (it would be reasonable to have **math** stuff from **math** lib in for example
 `math.c`...).
-There were some: I started from header files - 
+I decided to start with **header** files, because they contain only **declarations**:
 [mathmodule.c.h](https://github.com/python/cpython/blob/master/Modules/clinic/mathmodule.c.h):
 
 {% highlight C %}
@@ -188,36 +187,36 @@ So I learnt I'm actually looking for `math_pow_impl` function. Let's go to the i
 
 {% endhighlight %}
 
-After quick look at `git blame` (nice feature on github! I didn't have to clone the code) I concluded that this code
-wasn't changed for a few years, so it's not an issue that I'm looking at current master. What is actually written in that code?
+After quick look at `git blame` (actually I used this nice feature on [**github**](github.com) instead of *cloning* repo). I concluded that this code
+wasn't changed since years, so it's not an issue that I'm looking at current master. What is actually interesting in that code?
 
 
-There is no special case for cubic roots from negative numbers - the ValueError is thrown even if the result is a real number.
+* there is no special case for cubic roots from negative numbers - the ValueError is thrown even if the result is a real number.
 
-    Setting up a given processor to trap IEEE-754 floating point errors currently
-    requires custom code on a per-architecture basis. You may have to modify
-    :mod:`fpectl` to control your particular hardware.
-    
-    Conversion of an IEEE-754 exception to a Python exception requires that the
-    wrapper macros ``PyFPE_START_PROTECT`` and ``PyFPE_END_PROTECT`` be inserted
-    into your code in an appropriate fashion.  Python itself has been modified to
-    support the :mod:`fpectl` module, but many other codes of interest to numerical
-    analysts have not.
-    
-    The :mod:`fpectl` module is not thread-safe.
+* there are `PyFPE_START_PROTECT` and `PyFPE_END_PROTECT` **macros** used around the `pow` function. Here is a description
+of these **macros** from *documentation*:
 
+        Setting up a given processor to trap IEEE-754 floating point errors currently
+        requires custom code on a per-architecture basis. You may have to modify
+        :mod:`fpectl` to control your particular hardware.
 
+        Conversion of an IEEE-754 exception to a Python exception requires that the
+        wrapper macros ``PyFPE_START_PROTECT`` and ``PyFPE_END_PROTECT`` be inserted
+        into your code in an appropriate fashion.  Python itself has been modified to
+        support the :mod:`fpectl` module, but many other codes of interest to numerical
+        analysts have not.
 
+        The :mod:`fpectl` module is not thread-safe.
 
-
-For actual calculation of pow there are some functions in mpdecimal.c: _mpd_qpow_int, _mpd_qpow_mpd and _mpd_qpow_uint.
+For actual *calculation* of `pow` there are some functions in `mpdecimal.c`: `_mpd_qpow_int`, `_mpd_qpow_mpd` and `_mpd_qpow_uint`.
+I didn't find anything interesting in them.
 
 ### What about pow in C++?
 
-But anyway it will be nice to look it up in some C or C++ reference: http://en.cppreference.com/w/cpp/numeric/math/pow 
-(implementation is done in C, because it's from cmath module):
+But anyway it will be nice to look it up in some **C** or **C++** reference: http://en.cppreference.com/w/cpp/numeric/math/pow
+(implementation is done in **C**, because it's from `cmath` module):
  
- 
+
  ===
  Error handling
  Errors are reported as specified in math_errhandling
@@ -227,7 +226,7 @@ But anyway it will be nice to look it up in some C or C++ reference: http://en.c
  If the implementation supports IEEE floating-point arithmetic (IEC 60559),
  ===
     
-Actually in C++11 there is a special function for cubic roots http://en.cppreference.com/w/cpp/numeric/math/cbrt, which can handle
-the negative argument, but they didn't decide to use that one in pow some cpython implementation.
+Actually in **C++11** there is a special function for **cubic roots** called [`cbrt`](http://en.cppreference.com/w/cpp/numeric/math/cbrt), which can handle
+a **negative** argument, but they didn't decide to use that one in `pow` in both **Python** and **JavaScript**.
 
 
